@@ -1,0 +1,15 @@
+function ElectricalAppliance(name, power) {
+  this.name = name;
+  this.power = power;
+  this.isPlugged = false;
+}
+ElectricalAppliance.prototype.plugIn = function () {
+  console.log(this.name + " is plugged!" + "The power of device is " + this.power);
+  this.isPlugged = true;
+};
+const lamp = new ElectricalAppliance('lamp', 20);
+const laptop = new ElectricalAppliance('laptop', 120);
+const microwave = new ElectricalAppliance('microwave', 70);
+lamp.plugIn();
+laptop.plugIn();
+microwave.plugIn();

@@ -1,0 +1,38 @@
+class ElectricalAppliance{
+  constructor(name, power){
+    this.name = name;
+    this.power = power;
+    this.isPlugged = false;
+  }
+  plugIn(){
+    console.log(this.name + " is plugged! " + "The power of device is " + this.power);
+    this.isPlugged = true;
+  }
+}
+
+
+class Color extends ElectricalAppliance{
+  constructor(color, name, power){
+    super(name, power);
+    this.color = color;
+  }
+  
+  getColor(){
+    console.log(this.name + " with power " + this.power + " - is " + this.color);
+  }
+}
+
+
+
+
+const lamp = new ElectricalAppliance('lamp', 20);
+const laptop = new ElectricalAppliance('laptop', 120);
+const microwave = new ElectricalAppliance('microwave', 70);
+
+lamp.plugIn();
+laptop.plugIn();
+microwave.plugIn();
+
+const lamp1 = new Color('red', 'lamp', 20);
+lamp1.getColor();
+

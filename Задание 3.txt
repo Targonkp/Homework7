@@ -1,0 +1,6 @@
+function objfunc (){
+  let emptyobject = Object.create(null);
+  console.log(emptyobject);
+}
+
+objfunc ();

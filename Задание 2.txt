@@ -1,0 +1,13 @@
+let str = "hello";
+let obj = {
+  hello: "hello world",
+  a: 1,
+  b: 2,
+  c: 3,
+}
+
+function func(str, obj){
+  return (str in obj)
+}
+
+func (str, obj);

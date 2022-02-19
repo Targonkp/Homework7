@@ -1,0 +1,15 @@
+function func(obj){
+  for (let key in obj){
+    if (obj.hasOwnProperty(key))
+      {
+         console.log(key);
+    console.log(obj[key]);
+      }
+  }
+}
+let obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+}
+func(obj);
